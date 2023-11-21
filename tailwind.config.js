@@ -14,6 +14,9 @@ module.exports = {
       },
       backgroundColor: {
         'cor-primaria': '#001220'
+      },
+      color:{
+        'verde-principal': '#1EF409'
       }
     },
   },

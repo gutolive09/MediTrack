@@ -18,10 +18,10 @@ export default function Home() {
         />
       </section>
       <section className="text-white text-center">
-        <h2>
-          Conheça o <span>MediTracker</span>
+        <h2 className="text-5xl my-9">
+          Conheça o <span className="font-semibold text-[#1EF409]">MediTracker</span>
         </h2>
-        <h3>O App que pensa nas suas consultas por você</h3>
+        <h3 className="text-3xl mb-10">O App que pensa nas suas consultas por você</h3>
         <div>
           <div className="flex justify-around">
             <div>

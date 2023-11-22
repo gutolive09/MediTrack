@@ -24,8 +24,8 @@ export default function Home() {
         <h3 className="text-3xl mb-10">O App que pensa nas suas consultas por você</h3>
         <div>
           <div className="flex justify-around">
-            <div>
-              <h4>Gestão de consultas</h4>
+            <div className="w-1/3 mt-14">
+              <h4 className="text-2xl m-2 text-[#1EF409]">Gestão de consultas</h4>
               <p>
                 Lembra pacientes e médicos de maneira integrada sobre consultas
                 futuras, garantindo interações de saúde pontuais.

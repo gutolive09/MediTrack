@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --verde-primario: #1EF409
+}
+
 body {
   @apply bg-cor-primaria 
+}
+
+::-webkit-scrollbar{
+  @apply w-2
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cor-primaria 
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[--verde-primario]
 }

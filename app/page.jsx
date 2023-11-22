@@ -16,6 +16,9 @@ export default function Home() {
           height={300}
         />
       </section>
+      <section>
+        
+      </section>
     </>
   );
 }

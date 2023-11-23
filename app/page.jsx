@@ -27,8 +27,8 @@ export default function Home() {
           O App que pensa nas suas consultas por você
         </h3>
         <div>
-          <div className="flex justify-center">
-            <div className="w-1/3 mt-14 mr-20">
+          <div className="flex justify-center flex-col items-center md:flex-row md:gap-10">
+            <div className="w-1/3 md:mt-14 md:mr-20">
               <h4 className="text-2xl m-2 text-[--verde-primario]">
                 Gestão de consultas
               </h4>
@@ -38,20 +38,20 @@ export default function Home() {
               </p>
             </div>
             <Image
-              className="w-1/3"
+              className=" margin-auto md:w-1/3"
               src="/img/desc1.jpg"
               width={500}
               height={350}
             />
           </div>
-          <div className="flex justify-center mt-7 mb-7">
+          <div className="flex justify-center mt-7 mb-7 flex-col md:flex-row items-center md:gap-10">
             <Image
-              className="mr-20 w-1/3"
+              className=" md:mr-20 md:w-1/3"
               src="/img/desc2.jpg"
               width={500}
               height={350}
             />
-            <div className="w-1/3 mt-14">
+            <div className="w-1/3 md:mt-14">
               <h4 className="text-2xl m-2 text-[--verde-primario]">
                 Lembretes detalhados
               </h4>
@@ -62,8 +62,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex justify-center">
-            <div className="w-1/3 mt-14 mr-20">
+          <div className="flex justify-center flex-col md:flex-row items-center md:gap-10">
+            <div className="w-1/3 md:mt-14 md:mr-20">
               <h4 className="text-2xl m-2 text-[--verde-primario]">
                 Triagem de Sintomas
               </h4>
@@ -74,7 +74,7 @@ export default function Home() {
               </p>
             </div>
             <Image
-              className="w-1/3"
+              className="md:w-1/3"
               src="/img/desc3.jpg"
               width={500}
               height={350}

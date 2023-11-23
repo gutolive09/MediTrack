@@ -90,6 +90,14 @@ export default function Home() {
 
         <div className="text-white text-center text-3xl bg-[--verde-secundario] px-8 py-4 rounded-xl"><Link href="/cadastro">Inscreva-se!</Link></div>
       </section>
+      <section className="flex flex-col justify-center items-center mt-16">
+        <h2 className="my-16  text-center text-white text-6xl">
+          Coloque o seu hospital no mapa de {" "}
+          <span className="text-[--verde-primario]">milhares</span> de usuários
+        </h2>
+
+        <div className="text-white text-center text-3xl bg-[--verde-secundario] px-8 py-4 rounded-xl"><Link href="/cadastro">Entre em contato!</Link></div>
+      </section>
     </>
   );
 }

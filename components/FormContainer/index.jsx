@@ -7,7 +7,7 @@ export default function FormContainer() {
   const [form, setForm] = useState("paciente");
 
   return (
-    <section className="flex flex-col justify-center items-center gap-3">
+    <section className="flex flex-col justify-center items-center gap-3 w-full h-full pt-9">
       {form == "paciente" && (
         <>
           <FormPaciente />

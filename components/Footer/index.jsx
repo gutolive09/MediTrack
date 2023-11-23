@@ -5,13 +5,13 @@ export default function Header() {
     <footer className="flex justify-between items-center relative mt-20">
         <Image className="w-full overflow-hidden absolute"
             src="/img/wave-haikei.svg"
-            height={150}
+            height={300}
             width={1440}
             alt="Wave do footer"
         />
         <div className="h-full w-full z-10 flex justify-center relative">
             <nav>
-                <ul className="flex justify-evenly pt-32 text-white text-center gap-10">
+                <ul className="flex flex-col lg:flex-row justify-evenly pt-32 text-white text-center gap-10">
                     <li>
                         <p>André Rohregger Machado</p>
                         <p>RM: 98110</p>
@@ -39,6 +39,7 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
+
         </div>
     </footer>
   )

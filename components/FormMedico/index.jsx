@@ -13,7 +13,7 @@ export default function FormPaciente() {
     };
 
   return (
-    <form className=" bg-[--verde-secundario] w-1/4 px-1 py-6 rounded">
+    <form className=" bg-[--verde-secundario] w-1/2 lg:w-1/4 px-1 py-6 rounded">
         <fieldset className="flex flex-col justify-centera items-center gap-8">
             <legend className=" text-white text-center text-3xl mb-5">Area do médico</legend>
             <div className="flex flex-col items-center w-full gap-2">

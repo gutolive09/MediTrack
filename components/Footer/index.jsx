@@ -1,17 +1,10 @@
-import Image from "next/image"
 
 export default function Header() {
   return (
-    <footer className="flex justify-between items-center relative mt-20">
-        <Image className="w-full overflow-hidden absolute"
-            src="/img/wave-haikei.svg"
-            height={300}
-            width={1440}
-            alt="Wave do footer"
-        />
-        <div className="h-full w-full z-10 flex justify-center relative">
+    <footer className="flex justify-between items-center bg-[url('/img/wave-haikei.svg')] bg-cover bg-no-repeat h-60 overflow-ellipsis">
+        <div className="h-full w-full z-10 flex justify-center">
             <nav>
-                <ul className="flex flex-col lg:flex-row justify-evenly pt-32 text-white text-center gap-10">
+                <ul className="flex  lg:flex-row justify-evenly pt-32 text-white text-center gap-10 flex-wrap">
                     <li>
                         <p>André Rohregger Machado</p>
                         <p>RM: 98110</p>
@@ -39,7 +32,6 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
-
         </div>
     </footer>
   )

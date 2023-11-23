@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 
 export default function Header() {
   return (
@@ -10,9 +9,9 @@ export default function Header() {
             width={1440}
             alt="Wave do footer"
         />
-        <div className="z-10 flex justify-center">
+        <div className="h-full w-full z-10 flex justify-center relative">
             <nav>
-                <ul className="flex space-x-20 pt-32 text-white text-center mx-5">
+                <ul className="flex justify-evenly pt-32 text-white text-center gap-10">
                     <li>
                         <p>André Rohregger Machado</p>
                         <p>RM: 98110</p>

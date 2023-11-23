@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root{
-  --verde-primario: #1EF409
+  --verde-primario: #1EF409;
+  --verde-secundario: #033b08;
 }
 
 body {
@@ -21,3 +22,4 @@ body {
 ::-webkit-scrollbar-thumb {
   @apply bg-[--verde-primario]
 }
+

@@ -1,7 +1,7 @@
 
 export default function Header() {
   return (
-    <footer className="flex justify-between items-center bg-[url('/img/wave-haikei.svg')] bg-cover bg-no-repeat h-60 overflow-ellipsis">
+    <footer className="flex justify-between items-center bg-[url('/img/wave-haikei.svg')] bg-contain h-60">
         <div className="h-full w-full z-10 flex justify-center">
             <nav>
                 <ul className="flex  lg:flex-row justify-evenly pt-32 text-white text-center gap-10 flex-wrap">

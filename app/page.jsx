@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Header />
       <section className="relative h-screen">
         <h1 className="text-6xl text-white m-32 w-1/2">
           Nunca foi tão <span className="text-[#1EF409]">facil</span> acompanhar
@@ -58,7 +57,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer/>
     </>
   );
 }

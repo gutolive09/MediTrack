@@ -20,7 +20,7 @@ export default function FormPaciente() {
         e.preventDefault()
 
         try {
-            const response = await fetch("http://localhost:8080/api/login/paciente",{
+            const response = await fetch("http://localhost:3000/api/login/paciente",{
                 method: "POST",
                 headers:{
                     "Content-Type": "application/json"

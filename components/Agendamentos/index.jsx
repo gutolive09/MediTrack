@@ -1,7 +1,17 @@
-import React from "react";
+"use client"
+import { useState } from "react";
+import ModalAgendamento from "../ModalAgendamento";
 
 export default function Agendamentos() {
+
+    const [open, setOpen] = useState(true)
+    const [agendamento, setAgendamento] = useState("")
+
   return (
+
+    <>
+    {open ? <ModalAgendamento/>:""}
+    
     <section className="px-8 py-4 flex justify-evenly flex-wrap ">
       <div className="text-white flex flex-col justify-evenly items-center border-2 gap-10 border-[--verde-primario] rounded-3xl w-[500px] h-[300px] relative p-2 mt-6">
         <h2 className="absolute top-[-40px] left-5 text-3xl">
@@ -60,5 +70,6 @@ export default function Agendamentos() {
         </p>
       </div>
     </section>
+    </>
   );
 }

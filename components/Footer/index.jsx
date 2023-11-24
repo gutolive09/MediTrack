@@ -1,7 +1,7 @@
 
 export default function Header() {
   return (
-    <footer className="flex justify-between items-center mt-16 bg-[--verde-secundario] lg:bg-transparent lg:bg-[url('/img/wave-haikei.svg')] bg-contain">
+    <footer className="flex flex-col justify-between items-center gap-5 mt-16 bg-[--verde-secundario] lg:bg-transparent lg:bg-[url('/img/wave-haikei.svg')] bg-contain">
         <div className="h-full w-full z-10 flex justify-center ">
             <nav>
                 <ul className=" flex w-full lg:flex-row justify-evenly pt-32 text-white text-center gap-10 flex-wrap">
@@ -33,6 +33,7 @@ export default function Header() {
                 </ul>
             </nav>
         </div>
+        <p className="text-white">Direitos Reservados - © MediTracker 2023</p>
     </footer>
   )
 }

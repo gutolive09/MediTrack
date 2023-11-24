@@ -1,8 +1,9 @@
-import FormCadastro from '@/components/FormCadastro'
-import React from 'react'
+import FormCadastro from "@/components/FormCadastro";
 
 export default function Cadastro() {
   return (
-        <FormCadastro/>
-  )
+    <section className="flex flex-col justify-center items-center gap-3 w-full h-full pt-9">
+      <FormCadastro />
+    </section>
+  );
 }

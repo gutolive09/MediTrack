@@ -12,7 +12,7 @@ export default function SobreNos() {
         </div>
       </div>
       <div className="flex h-[380px]">
-        <Image width={380} height={380} />
+        <Image className="object-cover rounded-3xl" src="/img/Gabriel.jpg" width={380} height={380} />
         <div className="text-white w-full flex flex-col items-center gap-8">
           <h2 className="text-4xl">Gabriel Siqueira</h2>
           <p className="text-2xl">DEV Python Sênior</p>
@@ -20,7 +20,7 @@ export default function SobreNos() {
         </div>
       </div>
       <div className=" bg-[--verde-secundario] flex h-[380px]">
-        <Image width={380} height={380} />
+        <Image className="object-cover rounded-3xl" src="/img/Gustavo.jpg" width={380} height={380} />
         <div className="text-white w-full flex flex-col items-center gap-8">
           <h2 className="text-4xl">Gustavo de Oliveira Azevedo</h2>
           <p className="text-2xl">Lead Front-End</p>
@@ -36,7 +36,7 @@ export default function SobreNos() {
         </div>
       </div>
       <div className=" bg-[--verde-secundario] flex  h-[380px]">
-        <Image width={380} height={380} />
+        <Image className="object-cover rounded-3xl" src="/img/Juan.jpg" width={380} height={380} />
         <div className="text-white w-full flex flex-col items-center gap-8">
           <h2 className="text-4xl">Juan de Godoy</h2>
           <p className="text-2xl">Analista Sênior</p>

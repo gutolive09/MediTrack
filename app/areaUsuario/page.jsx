@@ -60,7 +60,16 @@ export default function AreaUsuario() {
         </div>
       </section>
       <section>
-        <div></div>
+        <div className="bg-[url('/img/bannerAgendamento.jpg')] rounded-3xl bg-cover mx-auto w-1/2 h-80">
+            <div className="w-full h-full bg-black bg-opacity-50 rounded-3xl">
+                <div>
+                    <h2>Atendimento rápido</h2>
+                    <p>Faça uma análise dos seus sintomas</p>
+                    <button>Iniciar</button>
+                </div>
+            </div>
+
+        </div>
       </section>
     </>
   );

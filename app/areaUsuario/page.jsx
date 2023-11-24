@@ -62,10 +62,10 @@ export default function AreaUsuario() {
       <section>
         <div className="bg-[url('/img/bannerAgendamento.jpg')] rounded-3xl bg-cover mx-auto w-1/2 h-80">
             <div className="w-full h-full bg-black bg-opacity-50 rounded-3xl">
-                <div>
-                    <h2>Atendimento rápido</h2>
-                    <p>Faça uma análise dos seus sintomas</p>
-                    <button>Iniciar</button>
+                <div className="text-white w-1/3 h-full flex flex-col items-center justify-center gap-7">
+                    <h2 className="text-2xl">Atendimento rápido</h2>
+                    <p className="text-xl text-center">Faça uma análise dos seus sintomas</p>
+                    <button className="text-black text-xl font-bold rounded-xl bg-[--verde-primario] px-6 py-3 w-fit">Iniciar</button>
                 </div>
             </div>
 

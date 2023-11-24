@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function FormPaciente() {
+
+    const navigate = useRouter()
 
     const [usuario, setUsuario] = useState({
         "email": "",
@@ -13,8 +16,36 @@ export default function FormPaciente() {
     setUsuario({...usuario,[name]:value});
     };
 
+    const handleSubmit = async (e) =>{
+        e.preventDefault()
+
+        try {
+            const response = await fetch("http://localhost:8080/api/login/paciente",{
+                method: "POST",
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(usuario)
+            })
+
+            if(response.ok){
+                const data= response.json()
+                if(data.status){
+                    alert("Logado com sucesso!")
+                    sessionStorage.setItem("email", usuario.email)
+
+                    setTimeout(() => {
+                        navigate.push("/areaUsuario")
+                    })
+                }
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
   return (
-    <form className=" bg-[--verde-secundario] w-1/2 lg:w-1/4 px-1 py-6 rounded">
+    <form onSubmit={handleSubmit} className=" bg-[--verde-secundario] w-1/2 lg:w-1/4 px-1 py-6 rounded">
         <fieldset className="flex flex-col justify-centera items-center gap-8">
             <legend className=" text-white text-center text-3xl mb-5">Area do usuário</legend>
             <div className="flex flex-col items-center w-full gap-2">

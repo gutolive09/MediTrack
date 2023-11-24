@@ -4,13 +4,11 @@ import ModalAgendamento from "../ModalAgendamento";
 
 export default function Agendamentos() {
 
-    const [open, setOpen] = useState(true)
-    const [agendamento, setAgendamento] = useState("")
+    const [open, setOpen] = useState(false)
 
   return (
-
     <>
-    {open ? <ModalAgendamento/>:""}
+    {open ? <ModalAgendamento setOpen={setOpen}/>:""}
     
     <section className="px-8 py-4 flex justify-evenly flex-wrap ">
       <div className="text-white flex flex-col justify-evenly items-center border-2 gap-10 border-[--verde-primario] rounded-3xl w-[500px] h-[300px] relative p-2 mt-6">
@@ -28,9 +26,9 @@ export default function Agendamentos() {
             <p>13:00</p>
           </div>
         </div>
-        <p className="cursor-pointer text-lg">
+        <button className="cursor-pointer text-lg" onClick={()=> setOpen(true)}>
           Acesse o agendamento para mais detalhes →
-        </p>
+        </button>
       </div>
       <div className="text-white border-2 border-[--verde-primario] rounded-3xl w-[500px] h-[300px] relative p-2 mt-10 lg:mt-6">
         <h2 className="absolute top-[-40px] left-5 text-3xl">

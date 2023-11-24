@@ -29,14 +29,14 @@ export default function FormPaciente() {
             })
 
             if(response.ok){
-                const data= response.json()
+                const data = response.json()
                 if(data.status){
                     alert("Logado com sucesso!")
                     sessionStorage.setItem("email", usuario.email)
 
                     setTimeout(() => {
                         navigate.push("/areaUsuario")
-                    })
+                    }, 2500)
                 }
             }
         } catch (error) {

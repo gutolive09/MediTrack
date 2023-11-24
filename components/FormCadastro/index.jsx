@@ -7,19 +7,19 @@ export default function FormCadastro() {
         <legend className=" text-white text-center text-3xl mb-5">Cadastre-se</legend>
         <div className="flex flex-col items-center w-full gap-2">
           <label className="text-white text-xl" htmlFor="idNome">Nome completo</label>
-          <input type="text" name="nome" id="idNome" className="w-1/2 rounded-xl px-2"/>
+          <input type="text" name="nome" id="idNome" className="w-1/2 rounded-xl px-2" required/>
         </div>
         <div className="flex flex-col items-center w-full gap-2">
           <label className="text-white text-xl" htmlFor="idEmail">Email</label>
-          <input type="text" name="email" id="idEmail" className="w-1/2 rounded-xl px-2"/>
+          <input type="text" name="email" id="idEmail" className="w-1/2 rounded-xl px-2" required/>
         </div>
         <div className="flex flex-col items-center w-full gap-2">
           <label className="text-white text-xl" htmlFor="idCpf">Cpf</label>
-          <input type="text" name="cpf" id="idCpf" className="w-1/2 rounded-xl px-2"/>
+          <input type="text" name="cpf" id="idCpf" className="w-1/2 rounded-xl px-2" required/>
         </div>
         <div className="flex flex-col items-center w-full gap-2">
           <label className="text-white text-xl" htmlFor="idSenha">Senha</label>
-          <input type="password" name="senha" id="idSenha" className="w-1/2 rounded-xl px-2" />
+          <input type="password" name="senha" id="idSenha" className="w-1/2 rounded-xl px-2" required/>
         </div>
         <div className="text-white">
           <p>A sua senha deve ter:</p>
@@ -31,11 +31,11 @@ export default function FormCadastro() {
         </div>
         <div className="flex flex-col items-center w-full gap-2">
           <label className="text-white text-xl" htmlFor="idSenhaConf">Confirme sua senha</label>
-          <input type="password" name="senhaConf" id="idSenhaConf" className="w-1/2 rounded-xl px-2"/>
+          <input type="password" name="senhaConf" id="idSenhaConf" className="w-1/2 rounded-xl px-2" required/>
         </div>
         <div>
           <input type="checkbox" name="termos" id="idTermos" />
-          <label className="text-white px-3 " htmlFor="idTermos">
+          <label className="text-white px-3 " htmlFor="idTermos" required>
             Você leu e concorda com os termos de privacidade
           </label>
         </div>

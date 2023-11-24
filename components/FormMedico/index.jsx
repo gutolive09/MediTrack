@@ -26,6 +26,7 @@ export default function FormPaciente() {
             </div>
             <button className="text-black text-xl font-bold rounded-xl bg-[--verde-primario] px-6 py-3">Enviar</button>
         </fieldset>
+        <p className="text-center mt-5 text-white text-xl"> <Link href="/cadastro">Não tem cadastro ? Clique aqui</Link> </p>
     </form>
   )
 }

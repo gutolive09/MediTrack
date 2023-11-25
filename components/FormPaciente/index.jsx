@@ -18,7 +18,7 @@ export default function FormPaciente() {
 
     const handleSubmit = async (e) =>{
         e.preventDefault()
-
+        console.log(usuario)
         try {
             const response = await fetch("http://localhost:3000/api/login/paciente",{
                 method: "POST",
@@ -29,14 +29,16 @@ export default function FormPaciente() {
             })
 
             if(response.ok){
-                const data = response.json()
+                const data = await response.json()
                 if(data.status){
                     alert("Logado com sucesso!")
                     sessionStorage.setItem("email", usuario.email)
 
                     setTimeout(() => {
                         navigate.push("/areaUsuario")
-                    }, 2500)
+                    }, 1000)
+                }else{
+                    alert("Falha ao logar")
                 }
             }
         } catch (error) {

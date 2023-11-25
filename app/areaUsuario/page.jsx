@@ -1,6 +1,18 @@
+"use client"
 import Agendamentos from "@/components/Agendamentos";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function AreaUsuario() {
+
+  const navigate = useRouter();
+
+  useEffect(() =>{
+    if(!sessionStorage.getItem("email")){
+      navigate.push("/")
+    }
+  }, [navigate])
+
   return (
     <>
       <div className="px-8 py-4">

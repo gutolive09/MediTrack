@@ -16,7 +16,7 @@ export default function AreaUsuario() {
   return (
     <>
       <div className="px-8 py-4">
-        <h1 className="text-white text-4xl">Bem vindo *Nome*</h1>
+        <h1 className="text-white text-4xl">Bem vindo {sessionStorage.getItem("email")}</h1>
         <hr className="border-[--verde-primario] border-2" />
       </div>
       <Agendamentos/>

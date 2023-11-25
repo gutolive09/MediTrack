@@ -7,8 +7,12 @@ export default function AreaUsuario() {
 
   const navigate = useRouter();
 
+  let user;
+
   useEffect(() =>{
-    if(!sessionStorage.getItem("email")){
+    user = sessionStorage.getItem("email")
+
+    if(!user){
       navigate.push("/")
     }
   }, [navigate])
@@ -16,10 +20,10 @@ export default function AreaUsuario() {
   return (
     <>
       <div className="px-8 py-4">
-        <h1 className="text-white text-4xl">Bem vindo {sessionStorage.getItem("email")}</h1>
+        <h1 className="text-white text-4xl">Bem vindo {user}</h1>
         <hr className="border-[--verde-primario] border-2" />
       </div>
-      <Agendamentos/>
+      <Agendamentos user={user}/>
       <section>
         <div className="bg-[url('/img/bannerAgendamento.jpg')] rounded-3xl bg-cover mx-auto w-1/2 h-80">
             <div className="w-full h-full bg-black bg-opacity-50 rounded-3xl">

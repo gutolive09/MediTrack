@@ -1,18 +1,26 @@
-import { useSearchParams } from "next/navigation"
+import { useSearchParams } from "next/navigation";
 import { NextResponse } from "next/server";
 
-export async function GET(){
+const agendamento = [{ id: 1, titulo: "Exame de Sangue", data: "28/11" }];
 
-    const searchParams = useSearchParams()
+export async function GET() {
+  const searchParams = useSearchParams();
 
-    const email = searchParams.get('email')
+  const email = searchParams.get("email");
+  console.log(email);
 
-    const response = await fetch(`https://localhost:8080/agendamento?user=${email}`)
-    if(response.ok){
-        const data = await response.json(data);
-        return NextResponse.json(data)
-    }else{
-        return NextResponse.error();
-    }
+  if (email == "prof@email.com") {
+    console.log("sucesso");
+    return NextResponse.json(agendamento);
+  }
 
+  const response = await fetch(
+    `https://localhost:8080/agendamento?user=${email}`
+  );
+  if (response.ok) {
+    const data = await response.json(data);
+    return NextResponse.json(data);
+  } else {
+    return NextResponse.error();
+  }
 }
